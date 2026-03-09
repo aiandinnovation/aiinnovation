@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI and Innovation Sprints</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Particle Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Anurag CSE(AI&ML) Dept</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#themes">Themes</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="#coordinators">Coordinators</a></li>
+            <li><a href="#special-thanks">Special Thanks</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section 1: Hero Section -->
+    <section id="hero" class="hero-section reveal">
+        <div class="hero-content">
+            <h1 class="glowing-text">AI and Innovation Sprints</h1>
+            <h2 class="subtitle">Rapid Prototyping and Digital Transformation</h2>
+            <p class="description">Organized by Department of CSE (AI & ML), Anurag Engineering College.</p>
+<button class="scroll-down-btn" onclick="scrollToAbout()">
+    <span>More Info </span>
+    <i class="fa-solid fa-arrow-down"></i>
+</button>
+        </div>
+    </section>
+
+    <!-- Section 2: About the Event Section -->
+    <section id="about" class="about-section reveal">
+        <div class="section-container">
+            <div class="glass-panel">
+                <h2 class="section-title">About the Event</h2>
+                <p>
+                    All the students of Anurag Engineering college are informed that the Department of CSE (AI & ML) is organizing an innovation event
+                    titled <strong class="event-title-highlight">"AI and Innovation Sprints: Rapid Prototyping and Digital
+                        Transformation"</strong>.
+                </p>
+                <p>
+                    Students will work in teams to design and develop AI-based prototype solutions to solve real-world
+                    problems.
+                </p>
+                <p>
+                    The objective is to encourage creativity, innovation, and application of Artificial Intelligence through
+                    rapid prototyping.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Event Themes Section -->
+    <section id="themes" class="themes-section reveal">
+        <div class="section-container">
+            <h2 class="section-title text-center">Event Themes</h2>
+            <div class="themes-grid">
+                <div class="theme-card reveal">
+                    <i class="fa-solid fa-heart-pulse icon text-neon-blue"></i>
+                    <h3>AI for Healthcare</h3>
+                </div>
+                <div class="theme-card reveal">
+                    <i class="fa-solid fa-graduation-cap icon text-neon-purple"></i>
+                    <h3>AI for Smart Education</h3>
+                </div>
+                <div class="theme-card reveal">
+                    <i class="fa-solid fa-seedling icon text-neon-green"></i>
+                    <h3>AI for Agriculture</h3>
+                </div>
+                <div class="theme-card reveal">
+                    <i class="fa-solid fa-city icon text-neon-cyan"></i>
+                    <h3>AI for Smart Cities</h3>
+                </div>
+                <div class="theme-card reveal">
+                    <i class="fa-solid fa-shield-halved icon text-neon-red"></i>
+                    <h3>AI for Cybersecurity</h3>
+                </div>
+                <div class="theme-card reveal">
+                    <i class="fa-solid fa-chart-line icon text-neon-yellow"></i>
+                    <h3>AI for Business & Digital Transformation</h3>
+                </div>
+                <div class="theme-card reveal">
+                    <i class="fa-solid fa-brain icon text-neon-pink"></i>
+                    <h3>Generative AI Applications</h3>
+                </div>
+                <div class="theme-card reveal">
+                    <i class="fa-solid fa-solar-panel icon text-neon-orange"></i>
+                    <h3>AI for Smart Power Grid / Renewable Energy</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 4: Event Details Section -->
+    <section id="details" class="details-section reveal">
+        <h2 class="section-title text-center">Event Details</h2>
+        <div class="details-card glass-panel">
+            <div class="detail-item">
+                <span class="detail-label">Event Title:</span>
+                <span class="detail-value highlight">AI and Innovation Sprints: Rapid Prototyping and Digital
+                    Transformation</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Participants:</span>
+                <span class="detail-value">All B.Tech & MBA Students</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Team Size:</span>
+                <span class="detail-value">3–4 Students per Team</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Mode:</span>
+                <span class="detail-value">Team-based Innovation Sprint</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Venue:</span>
+                <span class="detail-value">E-Block</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Event Date:</span>
+                <span class="detail-value text-neon-cyan">18 March 2026</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Registration Deadline:</span>
+                <span class="detail-value text-neon-red">14 March 2026</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: What Participants Must Present Section -->
+    <section id="requirements" class="req-section reveal">
+        <h2 class="section-title text-center">What Participants Must Present</h2>
+        <div class="req-list">
+            <div class="req-item reveal">
+                <div class="req-icon"><i class="fa-solid fa-circle-question"></i></div>
+                <div class="req-text">Problem Statement</div>
+            </div>
+            <div class="req-item reveal">
+                <div class="req-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                <div class="req-text">Proposed AI Solution</div>
+            </div>
+            <div class="req-item reveal">
+                <div class="req-icon"><i class="fa-solid fa-microchip"></i></div>
+                <div class="req-text">Prototype / Demo</div>
+            </div>
+            <div class="req-item reveal">
+                <div class="req-icon"><i class="fa-solid fa-person-chalkboard"></i></div>
+                <div class="req-text">Presentation</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5.5: Prizes Section -->
+    <section id="prizes" class="prizes-section reveal">
+        <h2 class="section-title text-center">Win Exciting Prizes</h2>
+        <div class="prizes-grid">
+            <div class="prize-card gold-prize reveal">
+                <div class="prize-glow"></div>
+                <div class="prize-icon"><i class="fa-solid fa-trophy"></i></div>
+                <div class="prize-place">1st Prize</div>
+                <div class="prize-amount">Winner</div>
+            </div>
+            <div class="prize-card silver-prize reveal">
+                <div class="prize-glow"></div>
+                <div class="prize-icon"><i class="fa-solid fa-medal"></i></div>
+                <div class="prize-place">2nd Prize</div>
+                <div class="prize-amount">Runner Up</div>
+            </div>
+
+        </div>
+        <div class="certificate-note reveal">
+            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+            <p>Every participant will receive a <strong class="highlight">Participation Certificate</strong> from the
+                Department of CSE (AI & ML), Anurag Engineering College.</p>
+        </div>
+    </section>
+
+    <!-- Section 6: Coordinators Section -->
+    <section id="coordinators" class="coordinators-section reveal">
+        <h2 class="section-title text-center">Coordinators</h2>
+
+        <div class="coordinator-category text-center">
+            <h3>Student Coordinators</h3>
+        </div>
+        <div class="coordinators-grid">
+            <div class="coord-card glass-panel reveal">
+                <h4>Krishnama Chary </h4>
+                <p>III CSE (AI&ML)</p>
+                <a href="tel:9014198771" class="coord-contact"><i class="fa-solid fa-phone"></i> 9014198771</a>
+            </div>
+            <div class="coord-card glass-panel reveal">
+                <h4>Alekhya</h4>
+                <p>II CSE (AI&ML)</p>
+                <a href="tel:9900509345" class="coord-contact"><i class="fa-solid fa-phone"></i> 9900509345</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Special Thanks -->
+    <section id="special-thanks" class="coordinators-section reveal">
+        <h2 class="section-title text-center">Special Thanks</h2>
+
+        <div class="faculty-grid special-thanks-grid">
+            <div class="coord-card glass-panel reveal faculty-card">
+                <div class="role-badge badge-faculty"><b>Faculty Coordinator</b></div>
+                <h4>Dr. M. Sharada</h4>
+                <p>Department of CSE (AI & ML)</p>
+            </div>
+            <div class="coord-card glass-panel reveal faculty-card">
+                <div class="role-badge badge-iic"><b>IIC Co-Ordinator</b></div>
+                <h4>Mrs. N. Chaitanya</h4>
+                <p>Department of CSE (AI & ML)</p>
+            </div>
+            <div class="coord-card glass-panel reveal faculty-card">
+                <div class="role-badge badge-hod"><b>Head of Department (HoD)</b></div>
+                <h4>Mrs. T. Indira Priyadarshini</h4>
+                <p>Department of CSE (AI & ML)</p>
+            </div>
+            <div class="coord-card glass-panel reveal faculty-card">
+                <div class="role-badge badge-principal"><b>Principal , IIC President</b></div>
+                <h4>Dr. Suresh Kumar Tummala</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: Final Call-to-Action Section -->
+    <section class="cta-section reveal">
+        <div class="cta-content glass-panel text-center">
+            <h2 class="cta-title glowing-text">Ready to Innovate?</h2>
+            <p>Join the sprint and transform your ideas into reality.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScnyuEgXcOFkyIv-npNeGRd_woFyoEXkBgR0w51_1RJ3I3xPg/viewform?usp=header" target="_blank" class="glow-btn large-btn">
+                <span>Register Your Team</span> <i class="fa-solid fa-rocket"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Department of CSE (AI & ML), Anurag Engineering College. All rights reserved.</p>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
